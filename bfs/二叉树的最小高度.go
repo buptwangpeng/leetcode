@@ -1,14 +1,13 @@
 package main
 
 import (
-	"fmt"
 	"leetcode/utils"
 )
 
 // mock 队列数据结构
 // type quue
 
-func GetTreeMinHight(root *utils.TreeNode) int {
+func GetTreeMinHeight(root *utils.TreeNode) int {
 	// 队列
 	q := utils.InitQueue()
 	q.Push(root)
@@ -21,6 +20,7 @@ func GetTreeMinHight(root *utils.TreeNode) int {
 		n := q.Length()
 		for i := 0; i < n; i++ {
 			current := q.Pop().(*utils.TreeNode)
+			// 是否符合目标
 			if current.LeftNode == nil && current.RightNode == nil {
 				return step
 			}
@@ -39,8 +39,8 @@ func GetTreeMinHight(root *utils.TreeNode) int {
 	return step
 }
 
-func main() {
-	root := utils.InitTree()
-	res := GetTreeMinHight(root)
-	fmt.Println(res)
-}
+// func main() {
+// 	root := utils.InitTree()
+// 	res := GetTreeMinHeight(root)
+// 	fmt.Println(res)
+// }

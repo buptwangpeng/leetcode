@@ -18,6 +18,11 @@ func (q *queue) Pop() interface{} {
 	if len(q.list) == 0 {
 		return 0
 	}
+	if len(q.list) == 1 {
+		res := q.list[0]
+		q.list = make([]interface{}, 0)
+		return res
+	}
 	res := q.list[0]
 	q.list = q.list[1:]
 	return res
