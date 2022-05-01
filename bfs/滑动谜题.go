@@ -1,13 +1,12 @@
-package main
+package bfs
 
 import (
-	"fmt"
 	"strings"
 )
 
 var neighbors = [6][]int{{1, 3}, {0, 2, 4}, {1, 5}, {0, 4}, {1, 3, 5}, {2, 4}}
 
-func slidingPuzzle(board [][]int) int {
+func SlidingPuzzle(board [][]int) int {
 	const target = "123450"
 	// 二维数组--》string
 	s := make([]byte, 0, 6)
@@ -54,10 +53,4 @@ func slidingPuzzle(board [][]int) int {
 	}
 
 	return -1
-}
-
-func main() {
-	board := [][]int{{4, 1, 2}, {5, 0, 3}}
-	res := slidingPuzzle(board)
-	fmt.Println(res)
 }

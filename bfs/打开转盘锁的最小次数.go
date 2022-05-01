@@ -1,4 +1,4 @@
-package main
+package bfs
 
 import (
 	"leetcode/utils"
@@ -71,16 +71,3 @@ func minusOne(s string, i int) string {
 	}
 	return string(sBytes)
 }
-
-// func main() {
-// 	// s := "1234"
-// 	// sBytes := []byte(s)
-// 	// fmt.Println(sBytes)
-
-// 	// res := plusOne("1339", 1)
-// 	// fmt.Println("res: ", res)
-
-// 	deadArr := []string{"8887", "8889", "8878", "8898", "8788", "8988", "7888", "9888"}
-// 	res := GetOpenLockMin("8888", deadArr) // -1
-// 	fmt.Println(res)
-// }

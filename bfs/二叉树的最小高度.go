@@ -1,4 +1,4 @@
-package main
+package bfs
 
 import (
 	"leetcode/utils"
