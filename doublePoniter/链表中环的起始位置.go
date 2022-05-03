@@ -1,4 +1,4 @@
-package main
+package doublePointer
 
 type ListNode struct {
 	Val  int
