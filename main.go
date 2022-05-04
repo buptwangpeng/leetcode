@@ -8,10 +8,17 @@ import (
 )
 
 func main() {
-	s := "ADOBECODEBANC"
-	target := "ABC"
-	res0 := window.MinWindow(s, target)
-	fmt.Println(res0)
+	// 字符串排列
+	s1 := "ac"
+	s2 := "abcadedg"
+	res := window.CheckInclusion2(s1, s2)
+	fmt.Println(res)
+
+	//最小覆盖子串
+	// s := "ADOBECODEBANC"
+	// target := "ABC"
+	// res0 := window.MinWindow(s, target)
+	// fmt.Println(res0)
 
 	// 滑动谜题
 	// board := [][]int{{4, 1, 2}, {5, 0, 3}}

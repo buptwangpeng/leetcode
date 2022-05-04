@@ -1,12 +1,12 @@
 package window
 
 func MinWindow(s string, t string) string {
-	// 初始化：两个map，三个变int量
+	// 初始化：两个map，三个int变量
 	window := make(map[uint8]int)
 	need := make(map[uint8]int)
 	left := 0
 	right := 0
-	valid := 0
+	valid := 0 // 有效的子字符数量，无重复
 	for i := 0; i < len(t); i++ {
 		need[t[i]] += 1
 	}
