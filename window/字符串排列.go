@@ -1,5 +1,6 @@
 package window
 
+// leetcode 567
 // s2中是否有一个子串：只包含s2的全部字符，而没有其他字符。用滑动窗口
 
 // 方法1 我自己写的，leetcode上可以过
@@ -60,7 +61,6 @@ func CheckInclusion1(s1 string, s2 string) bool {
 }
 
 // 方法2：labuladong书上的
-// s2中是否有一个子串：只包含s2的全部字符，而没有其他字符。用滑动窗口
 func CheckInclusion2(s1 string, s2 string) bool {
 	// 初始化：两个map，三个int变量
 	need := make(map[uint8]int)
@@ -90,6 +90,7 @@ func CheckInclusion2(s1 string, s2 string) bool {
 		// fmt.Printf("window: [%d, %d) \n", left, right)
 
 		// 判断窗口是否要左侧收缩
+		// 保证窗口长度与s1的长度一致，这样得出结果肯定是s1的全排列，感觉right-left == len(s1)也可以
 		for right-left >= len(s1) {
 			if valid == len(need) {
 				return true
