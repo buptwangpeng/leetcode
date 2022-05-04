@@ -8,11 +8,15 @@ import (
 )
 
 func main() {
-	// 找所有字母异位词
-	s1 := "cbaebabacd"
-	s2 := "abc"
-	res := window.FindAnagrams(s1, s2)
+	// 最长无重复子串
+	s := "cbaebabacd"
+	res := window.LengthOfLongestSubstring(s)
 	fmt.Println(res)
+	// 找所有字母异位词
+	// s1 := "cbaebabacd"
+	// s2 := "abc"
+	// res := window.FindAnagrams(s1, s2)
+	// fmt.Println(res)
 
 	// 字符串排列
 	// s1 := "ac"
