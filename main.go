@@ -1,17 +1,22 @@
 package main
 
 import (
-	// "fmt"
-	// "leetcode/bfs"
 	"fmt"
-	"leetcode/window" //文件夹名称必须是英文，不然调用包会报错，找不到
+	backtrack "leetcode/backTrack"
 )
 
+//文件夹名称必须是英文，不然调用包会报错，找不到
+
 func main() {
-	// 最长无重复子串
-	s := "cbaebabacd"
-	res := window.LengthOfLongestSubstring(s)
+	// 无重复全排列
+	nums := []int{1, 2, 3}
+	res := backtrack.Permute(nums)
 	fmt.Println(res)
+
+	// 最长无重复子串
+	// s := "cbaebabacd"
+	// res := window.LengthOfLongestSubstring(s)
+	// fmt.Println(res)
 	// 找所有字母异位词
 	// s1 := "cbaebabacd"
 	// s2 := "abc"
