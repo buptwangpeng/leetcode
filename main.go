@@ -8,10 +8,14 @@ import (
 //文件夹名称必须是英文，不然调用包会报错，找不到
 
 func main() {
-	// 无重复全排列
-	nums := []int{1, 2, 3}
-	res := backtrack.Permute(nums)
+	// n皇后
+	res := backtrack.SolveNQueens(5) //6还有点问题，半成品算法
 	fmt.Println(res)
+
+	// 无重复全排列
+	// nums := []int{1, 2, 3}
+	// res := backtrack.Permute(nums)
+	// fmt.Println(res)
 
 	// 最长无重复子串
 	// s := "cbaebabacd"
