@@ -2,15 +2,19 @@ package main
 
 import (
 	"fmt"
-	backtrack "leetcode/backTrack"
+	binarysearch "leetcode/binarySearch"
 )
 
 //文件夹名称必须是英文，不然调用包会报错，找不到
 
 func main() {
+	// 搜索旋转排序数组
+	test := []int{4, 5, 6, 0, 1, 2, 3}
+	res := binarysearch.Search(test, 5)
+	fmt.Println("res: ", res)
 	// n皇后
-	res := backtrack.SolveNQueens(5) //6还有点问题，半成品算法
-	fmt.Println(res)
+	// res := backtrack.SolveNQueens(5) //6还有点问题，半成品算法
+	// fmt.Println(res)
 
 	// 无重复全排列
 	// nums := []int{1, 2, 3}
