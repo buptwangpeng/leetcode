@@ -8,9 +8,13 @@ import (
 //文件夹名称必须是英文，不然调用包会报错，找不到
 
 func main() {
-	// x的平方根
-	res := binarysearch.MySqrt(8)
+	// 搜索二维矩阵
+	test := [][]int{{1, 3, 5, 7}, {10, 11, 16, 20}, {23, 30, 34, 60}}
+	res := binarysearch.SearchMatrix(test, 10)
 	fmt.Println("res: ", res)
+	// x的平方根
+	// res := binarysearch.MySqrt(8)
+	// fmt.Println("res: ", res)
 	// 在排序数组中查找元素的第一个和最后一个位置
 	// test := []int{1, 2, 4, 4, 4, 5, 6}
 	// res := binarysearch.SearchRange(test, 4)
