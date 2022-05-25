@@ -8,10 +8,13 @@ import (
 //文件夹名称必须是英文，不然调用包会报错，找不到
 
 func main() {
-	// 在排序数组中查找元素的第一个和最后一个位置
-	test := []int{1, 2, 4, 4, 4, 5, 6}
-	res := binarysearch.SearchRange(test, 4)
+	// x的平方根
+	res := binarysearch.MySqrt(8)
 	fmt.Println("res: ", res)
+	// 在排序数组中查找元素的第一个和最后一个位置
+	// test := []int{1, 2, 4, 4, 4, 5, 6}
+	// res := binarysearch.SearchRange(test, 4)
+	// fmt.Println("res: ", res)
 
 	// 搜索旋转排序数组
 	// test := []int{4, 5, 6, 0, 1, 2, 3}
