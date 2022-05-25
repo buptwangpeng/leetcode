@@ -1,6 +1,6 @@
 package binarysearch
 
-// leetcode 33
+// leetcode 33 中等
 
 func Search(nums []int, target int) int {
 	left := 0
