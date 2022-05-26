@@ -2,16 +2,22 @@ package main
 
 import (
 	"fmt"
-	binarysearch "leetcode/binarySearch"
+	"leetcode/tree"
+	"leetcode/utils"
 )
 
 //文件夹名称必须是英文，不然调用包会报错，找不到
 
 func main() {
+	// 二叉树中的最大路径和
+	root := utils.InitTree()
+	res := tree.MaxPathSum(root)
+	fmt.Println(res) //8
+
 	// 搜索二维矩阵
-	test := [][]int{{1, 3, 5, 7}, {10, 11, 16, 20}, {23, 30, 34, 60}}
-	res := binarysearch.SearchMatrix(test, 10)
-	fmt.Println("res: ", res)
+	// test := [][]int{{1, 3, 5, 7}, {10, 11, 16, 20}, {23, 30, 34, 60}}
+	// res := binarysearch.SearchMatrix(test, 10)
+	// fmt.Println("res: ", res)
 	// x的平方根
 	// res := binarysearch.MySqrt(8)
 	// fmt.Println("res: ", res)
