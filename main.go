@@ -3,16 +3,21 @@ package main
 import (
 	"fmt"
 	"leetcode/tree"
-	"leetcode/utils"
 )
 
 //文件夹名称必须是英文，不然调用包会报错，找不到
 
 func main() {
+	// 从前序与中序遍历序列构造二叉树
+	pre := []int{3, 9, 20, 15, 7}
+	mid := []int{9, 3, 15, 20, 7}
+	root := tree.BuildTree(pre, mid)
+	fmt.Println(root.Value)
+
 	// 二叉树中的最大路径和
-	root := utils.InitTree()
-	res := tree.MaxPathSum(root)
-	fmt.Println(res) //8
+	// root := utils.InitTree()
+	// res := tree.MaxPathSum(root)
+	// fmt.Println(res) //8
 
 	// 搜索二维矩阵
 	// test := [][]int{{1, 3, 5, 7}, {10, 11, 16, 20}, {23, 30, 34, 60}}
