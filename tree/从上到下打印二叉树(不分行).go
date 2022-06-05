@@ -4,6 +4,8 @@ import "leetcode/utils"
 
 // leetcode 剑指 Offer 32 - I. 从上到下打印二叉树(不分行)
 
+// 关键：用队列
+
 func LevelOrder(root *utils.TreeNode) []int {
 	if root == nil {
 		return nil
