@@ -2,7 +2,7 @@ package tree
 
 import "leetcode/utils"
 
-// leetcode 剑指 Offer 32 - II. 从上到下打印二叉树 II
+// leetcode 剑指 Offer 32 - II. 从上到下打印二叉树 II(分行)
 // 关键点：队列+两个变量
 func LevelOrder2(root *utils.TreeNode) [][]int {
 	if root == nil {
