@@ -2,12 +2,15 @@ package main
 
 import (
 	"fmt"
-	"leetcode/tree"
+	"leetcode/dynamic"
 )
 
 //文件夹名称必须是英文，不然调用包会报错，找不到
 
 func main() {
+	// 0-1背包
+	res := dynamic.Knapsack(4, []int{2, 1, 3}, []int{4, 2, 3})
+	fmt.Println(res)
 	// 从上到下打印二叉树(不分行)
 
 	// 对称的二叉树
@@ -21,10 +24,10 @@ func main() {
 	// 恢复二叉搜索树
 
 	// 从前序与中序遍历序列构造二叉树
-	pre := []int{3, 9, 20, 15, 7}
-	mid := []int{9, 3, 15, 20, 7}
-	root := tree.BuildTree(pre, mid)
-	fmt.Println(root.Value)
+	// pre := []int{3, 9, 20, 15, 7}
+	// mid := []int{9, 3, 15, 20, 7}
+	// root := tree.BuildTree(pre, mid)
+	// fmt.Println(root.Value)
 
 	// 二叉树中的最大路径和
 	// root := utils.InitTree()
