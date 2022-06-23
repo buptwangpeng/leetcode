@@ -25,7 +25,7 @@ func VerifyPostorder(postorder []int) bool {
 
 	}
 
-	left := verifyPostorder(leftArr)
-	right := verifyPostorder(rightArr)
+	left := VerifyPostorder(leftArr)
+	right := VerifyPostorder(rightArr)
 	return left && right && res
 }
