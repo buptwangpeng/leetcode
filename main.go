@@ -1,18 +1,14 @@
 package main
 
-import (
-	"fmt"
-	"leetcode/tree"
-	"leetcode/utils"
-)
-
 //文件夹名称必须是英文，不然调用包会报错，找不到
 
 func main() {
+	// 二叉树的序列化与反序列化
+
 	// 完全二叉树的节点数
-	root := utils.InitTree()
-	res := tree.CountNums(root)
-	fmt.Println(res)
+	// root := utils.InitTree()
+	// res := tree.CountNums(root)
+	// fmt.Println(res)
 	// 0-1背包
 	// res := dynamic.Knapsack(4, []int{2, 1, 3}, []int{4, 2, 3})
 	// fmt.Println(res)
