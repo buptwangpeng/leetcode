@@ -23,10 +23,10 @@ func Serialize(root *utils.TreeNode) string {
 	return res
 }
 func serialize0(root *utils.TreeNode) {
-	// 前序
+	// 前序遍历来序列化
 	if root == nil {
 		seqArr = append(seqArr, "#")
-		seqArr = append(seqArr, ",")
+		seqArr = append(seqArr, ",") // ","分割
 		return
 	}
 	seqArr = append(seqArr, strconv.Itoa(root.Value))
@@ -44,7 +44,7 @@ func Deserialize(data string) *utils.TreeNode {
 	return deserialize0()
 }
 func deserialize0() *utils.TreeNode {
-	// 用递归最简单
+	// 用递归最简单，前序
 	if len(desArr) == 0 {
 		return nil
 	}
