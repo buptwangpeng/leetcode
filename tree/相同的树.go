@@ -2,7 +2,7 @@ package tree
 
 import "leetcode/utils"
 
-// leetcode easy 100
+// leetcode easy 100 相同的树
 
 func isSameTree(p *utils.TreeNode, q *utils.TreeNode) bool {
 	// 处理root

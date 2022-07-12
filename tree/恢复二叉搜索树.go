@@ -2,7 +2,7 @@ package tree
 
 import "leetcode/utils"
 
-// leetcode 99 中等
+// leetcode 99 中等 恢复二叉搜索树
 var prev, x, y *utils.TreeNode
 
 func RecoverTree(root *utils.TreeNode) {

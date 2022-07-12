@@ -1,6 +1,6 @@
 package binarysearch
 
-// leetcode 34 中等
+// leetcode 34 中等 在排序数组中查找元素的第一个和最后一个位置
 func SearchRange(nums []int, target int) []int {
 	if len(nums) == 0 {
 		return []int{-1, -1}

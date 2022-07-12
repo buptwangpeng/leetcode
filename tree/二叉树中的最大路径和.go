@@ -2,7 +2,7 @@ package tree
 
 import "leetcode/utils"
 
-//leetcode 124 困难
+//leetcode 124 困难 二叉树中的最大路径和
 // 计算最大路径和，对于一个节点来说，先计算左子树和右子树的最大路径和，然后再加上自己的值
 
 var ans int

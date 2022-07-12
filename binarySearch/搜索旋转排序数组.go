@@ -1,6 +1,6 @@
 package binarysearch
 
-// leetcode 33 中等
+// leetcode 33 中等 搜索旋转排序数组
 
 func Search(nums []int, target int) int {
 	left := 0

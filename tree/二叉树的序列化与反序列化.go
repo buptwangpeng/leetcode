@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-// leetcode 297 困难
+// leetcode 297 困难 二叉树的序列化与反序列化
 
 var seqArr []string // 写算法题多用全局变量，可解决很多问题，如避免用闭包
 var desArr []string

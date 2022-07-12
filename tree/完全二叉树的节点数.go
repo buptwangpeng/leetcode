@@ -5,6 +5,7 @@ import (
 	"math"
 )
 
+// 完全二叉树的节点数
 // 完全二叉树和满二叉树的定义（中文定义，可看labuladong）
 func CountNums(root *utils.TreeNode) int {
 	if root == nil {

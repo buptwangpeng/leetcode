@@ -1,5 +1,7 @@
 package others
 
+// LRU
+
 // 自顶向下写：先默写模版，再实现双向链表
 type LRUCache struct {
 	HashMap    map[int]*node

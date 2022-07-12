@@ -1,5 +1,6 @@
 package dynamic
 
+// 0-1背包问题
 /***
 模版：
 for 状态1 in 状态1所有的取值：

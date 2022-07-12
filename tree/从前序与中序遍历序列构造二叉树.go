@@ -2,7 +2,7 @@ package tree
 
 import "leetcode/utils"
 
-// leetcode 105 中等
+// leetcode 105 中等 从前序与中序遍历序列构造二叉树
 
 func BuildTree(preorder []int, inorder []int) *utils.TreeNode {
 	if len(preorder) == 0 {

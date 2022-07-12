@@ -1,6 +1,6 @@
 package binarysearch
 
-// leetcode 74
+// leetcode 74 搜索二维矩阵
 
 func SearchMatrix(matrix [][]int, target int) bool {
 	// 把二维数组变为一个递增数组

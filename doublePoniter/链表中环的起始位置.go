@@ -1,5 +1,6 @@
 package doublePointer
 
+// 链表中环的起始位置
 type ListNode struct {
 	Val  int
 	Next *ListNode

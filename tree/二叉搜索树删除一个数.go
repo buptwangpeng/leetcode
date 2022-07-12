@@ -2,7 +2,7 @@ package tree
 
 import "leetcode/utils"
 
-// leetcode 中等 450
+// leetcode 中等 450 二叉搜索树删除一个数
 
 func deleteNode(root *utils.TreeNode, key int) *utils.TreeNode {
 	if root == nil {

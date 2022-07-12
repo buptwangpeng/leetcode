@@ -2,7 +2,7 @@ package tree
 
 import "leetcode/utils"
 
-// leetcode 简单 700
+// leetcode 简单 700 二叉搜索树找数
 
 func searchBST(root *utils.TreeNode, val int) *utils.TreeNode {
 	if root == nil {

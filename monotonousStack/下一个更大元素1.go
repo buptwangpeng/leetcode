@@ -1,6 +1,6 @@
 package monotonousstack
 
-//leetcode 496 easy
+//leetcode 496 easy // 下一个更大元素1
 
 // 单调栈+map
 // 先求 nums2中全部元素的下一个更大元素，再从中取nums1对应的值

@@ -1,6 +1,6 @@
 package binarysearch
 
-// leetcode 79 简单
+// leetcode 79 简单 x的平方根
 func MySqrt(x int) int {
 	left := 0
 	right := x

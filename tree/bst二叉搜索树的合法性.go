@@ -2,7 +2,7 @@ package tree
 
 import "leetcode/utils"
 
-// leetcode 中等 98
+// leetcode 中等 98 bst bst二叉搜索树的合法性
 
 // 核心思路：相当于给树上的所有节点添加了一个min和max边界，约束root的左子树节点值小于root的值，右子树的值大于root的值
 func isValidBST(root *utils.TreeNode) bool {

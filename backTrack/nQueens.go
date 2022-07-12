@@ -2,6 +2,7 @@ package backtrack
 
 var res0 [][]string
 
+// n皇后问题
 // 半成品算法，只满足部分测试用例，之后有时间完善
 
 func SolveNQueens(n int) [][]string {

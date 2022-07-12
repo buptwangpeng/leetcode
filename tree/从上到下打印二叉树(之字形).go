@@ -2,7 +2,7 @@ package tree
 
 import "leetcode/utils"
 
-// leetcode 剑指 Offer 32 - III. 从上到下打印二叉树 III
+// leetcode 剑指 Offer 32 - III. 从上到下打印二叉树 之字形 III
 
 //关键：两个栈（写进一个数组里)，特殊的写法，最后还反了一下
 
