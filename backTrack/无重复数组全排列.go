@@ -27,14 +27,7 @@ func backtrack(nums []int, choice []int) {
 		// 进入下一决策树
 		backtrack(nums, choice)
 		// 撤销选择
-		choiceTmp := make([]int, 0)
-		for h := 0; h < len(choice); h++ {
-			if choice[h] == nums[i] {
-				continue
-			}
-			choiceTmp = append(choiceTmp, choice[h])
-		}
-		choice = choiceTmp
+		choice = choice[:len(choice)-1]
 	}
 	return
 }

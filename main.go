@@ -1,8 +1,44 @@
 package main
 
-//文件夹名称必须是英文，不然调用包会报错，找不到
+import (
+	"fmt"
+	backtrack "leetcode/backTrack"
+)
+
+type AdResp struct {
+	ReqId string `json:"req_id"`
+	Ads   []*Ad  `json:"ads"`
+}
+type Ad struct {
+	Title string `json:"title"`
+	AdsId []int  `json:"ads_id"`
+}
+
+var adResJson = "{\"req_id\":\"123\", \"ads\":[{\"title\":\"test1\"}, {\"title\":\"test2\", \"ads_id\":[1,2,4]}]}"
+var adResJson0 = "{\"req_id\":\"123\"}"
 
 func main() {
+	// test := "asdcs"
+	// fmt.Println(reflect.TypeOf(test[0]))
+	// priceEnc := "26.00"
+	// priceEnc := "6d6e_dHN2u0TELlYigmh8w"
+	// price, err := strconv.ParseFloat(priceEnc, 32)
+	// if err != nil {
+	// 	fmt.Println("err: ", err)
+	// }
+	// fmt.Println("price: ", price)
+
+	// adResp := &AdResp{}
+	// err := json.Unmarshal([]byte(adResJson0), adResp)
+	// if err != nil {
+	// 	fmt.Println("wp_err: ", err)
+	// }
+	// for _, ad := range adResp.Ads {
+	// 	fmt.Println("ad.Title: ", ad.Title)
+
+	// }
+	// fmt.Println("res: ", adResp.Ads == nil)
+
 	// 二叉树的序列化与反序列化
 
 	// 完全二叉树的节点数
@@ -56,9 +92,9 @@ func main() {
 	// fmt.Println(res)
 
 	// 无重复全排列
-	// nums := []int{1, 2, 3}
-	// res := backtrack.Permute(nums)
-	// fmt.Println(res)
+	nums := []int{1, 2, 3}
+	res := backtrack.Permute(nums)
+	fmt.Println(res)
 
 	// 最长无重复子串
 	// s := "cbaebabacd"

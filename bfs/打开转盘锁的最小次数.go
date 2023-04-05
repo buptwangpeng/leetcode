@@ -30,6 +30,7 @@ func GetOpenLockMin(target string, deadArr []string) int {
 			if current == target {
 				return step
 			}
+			// 每个点向外扩散
 			for j := 0; j < 4; j++ {
 				up := plusOne(current, j)
 				if !visited[up] && !deadMap[up] {

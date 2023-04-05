@@ -1,6 +1,6 @@
 package window
 
-// leetcode 76
+// leetcode 76 hard
 
 func MinWindow(s string, t string) string {
 	// 初始化：两个map，三个int变量
@@ -22,8 +22,7 @@ func MinWindow(s string, t string) string {
 		// 右移窗口
 		right += 1
 		// 进行窗口内数据的一系列更新
-		_, ok := need[c]
-		if ok {
+		if _, ok := need[c]; ok {
 			window[c] += 1
 			if window[c] == need[c] {
 				valid += 1
@@ -35,9 +34,9 @@ func MinWindow(s string, t string) string {
 		// fmt.Println("valid: ", valid)
 		// fmt.Println("need: ", need)
 
-		// 判断左侧窗口是否要收缩
+		// 判断左侧窗口是否要收缩，注意这也是个for循环不是if
 		for valid == len(need) { //这里很关键，必须用need的长度，不然测试用例: s="aa", t="aa"就会报错
-			//  更新最小覆盖子串
+			//  更新最小覆盖子串，输出结果
 			if right-left < leng {
 				start = left
 				leng = right - left
@@ -47,8 +46,7 @@ func MinWindow(s string, t string) string {
 			// 左移窗口
 			left += 1
 			// 进行窗口内的一系列更新
-			_, ok := need[d]
-			if ok {
+			if _, ok := need[d]; ok {
 				if window[d] == need[d] {
 					valid -= 1
 				}
@@ -61,5 +59,4 @@ func MinWindow(s string, t string) string {
 		return ""
 	}
 	return s[start : start+leng] //左闭右开
-
 }

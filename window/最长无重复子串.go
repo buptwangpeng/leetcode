@@ -1,5 +1,6 @@
 package window
 
+// 子串暗含是连续的字符，返回长度
 func LengthOfLongestSubstring(s string) int {
 	// 初始化
 	window := make(map[uint8]int)
@@ -24,7 +25,7 @@ func LengthOfLongestSubstring(s string) int {
 			// 数据更新
 			window[d] -= 1
 		}
-		// 此时[left: right+1]之间的元素是不含重复字符的子串
+		// 此时[left: right]之间的元素是不含重复字符的子串
 		res = maxTest(res, right-left)
 	}
 	return res

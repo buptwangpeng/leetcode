@@ -4,9 +4,6 @@ import (
 	"leetcode/utils"
 )
 
-// mock 队列数据结构
-// type quue
-
 func GetTreeMinHeight(root *utils.TreeNode) int {
 	// 队列
 	q := utils.InitQueue()

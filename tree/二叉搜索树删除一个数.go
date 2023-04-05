@@ -20,7 +20,7 @@ func deleteNode(root *utils.TreeNode, key int) *utils.TreeNode {
 		minNode := getMinNode(root.RightNode)
 		// 把root改成minNode
 		root.Value = minNode.Value
-		// 转而去删除minNode
+		// 转而去删除右子树中的minNode
 		root.RightNode = deleteNode(root.RightNode, minNode.Value)
 
 	} else if root.Value > key {

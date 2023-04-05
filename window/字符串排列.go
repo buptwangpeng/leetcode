@@ -1,10 +1,10 @@
 package window
 
 // leetcode 567
-// s2中是否有一个子串：只包含s2的全部字符，而没有其他字符。用滑动窗口
+// s2中是否有一个子串：只包含s1的全部字符，而没有其他字符。用滑动窗口
 
 // 方法1 我自己写的，leetcode上可以过
-func CheckInclusion1(s1 string, s2 string) bool {
+func CheckInclusion1(s2 string, s1 string) bool {
 	// 初始化：两个map，三个int变量
 	need := make(map[uint8]int)
 	window := make(map[uint8]int)

@@ -40,6 +40,7 @@ func binaryTreePaths0(root *utils.TreeNode, s []string) {
 	}
 	valStr := strconv.Itoa(root.Value)
 	s = append(s, valStr)
+	// 题目要求必须是叶子节点
 	if root.LeftNode == nil && root.RightNode == nil {
 		//  fmt.Println(" ")
 		//  fmt.Println("item: ", s)
